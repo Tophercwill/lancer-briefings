@@ -5,35 +5,35 @@
 /*-------------------------------------*/
 
 //Primary Colors
-$primary: rgba(125, 187, 187, 1);
-$secondary: rgba(23, 29, 30, 0.8);
-$highlight-hover: rgba(255, 255, 255, 0.3);
-$highlight-active: rgba(255, 255, 255, 0.1);
+$primary: rgb(153, 30, 42);
+$secondary: rgba(255, 255, 255, 0.8);
+$highlight-hover: rgba(139, 139, 139, 0.3);
+$highlight-active: rgba(177, 177, 177, 0.1);
 
 //Primary Text
-$text-headers: rgba(0, 0, 0, 1);
-$text-location: rgba(255, 255, 255, 0.87);
+$text-headers: rgb(0, 0, 0);
+$text-location: rgba(0, 0, 0, 0.87);
 
 //Location Information
-$location-separator: rgba(255, 255, 255, 0.24);
+$location-separator: rgba(0, 0, 0, 0.24);
 
 //Mission Pane
-$text-mission-title: rgba(255, 255, 255, 0.67);
-$text-mission-status: rgba(255, 255, 255, 0.87);
-$mission-start: rgba(109, 109, 109, 1);
+$text-mission-title: rgba(0, 0, 0, 0.67);
+$text-mission-status: rgba(0, 0, 0, 0.87);
+$mission-start: rgb(172, 172, 172);
 $mission-partial: rgba(88, 34, 102, 1);
 $mission-success: rgba(34, 102, 98, 1);
 $mission-failure: rgba(176, 45, 45, 1);
 
 //Pilot Roster Text
-$text-pilot-header: rgba(255, 255, 255, 0.67);
-$text-pilot-value: rgba(255, 255, 255, 0.87);
-$text-pilot-code: rgba(255, 255, 255, 0.47);
+$text-pilot-header: rgba(0, 0, 0, 0.67);
+$text-pilot-value: rgba(0, 0, 0, 0.87);
+$text-pilot-code: rgba(0, 0, 0, 0.47);
 
 //Markdown (Current Assignment, Events Log, Pilot Biography)
-$text-markdown-p: rgba(255, 255, 255, 0.87);
-$text-markdown-h1: rgba(255, 255, 255, 0.67);
-$text-markdown-h2: rgba(255, 255, 255, 0.87);
+$text-markdown-p: rgba(0, 0, 0, 0.87);
+$text-markdown-h1: rgba(0, 0, 0, 0.67);
+$text-markdown-h2: rgba(0, 0, 0, 0.87);
 
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
@@ -119,6 +119,7 @@ header {
   .title-container {
     display: flex;
     flex-direction: column;
+    color:white
   }
 
   #title-header {
@@ -156,7 +157,7 @@ header {
     font-size: 24px;
     margin: 0%;
     align-self: center;
-    font-family: "Titillium Web", cursive;
+    font-family: "Big Shoulders Display", cursive;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -174,7 +175,7 @@ header {
 }
 
 #title-first-line {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .rhombus {
@@ -307,6 +308,7 @@ section .section-header {
   display: inline-flex;
   gap: 15px;
   padding-left: 16px;
+  color: white;
 
   img {
     width: 36px;
@@ -404,6 +406,7 @@ section .section-header {
   align-items: center;
   transition: background-color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
   border-radius: 3px;
+
 
   .name {
     flex-grow: 8;
